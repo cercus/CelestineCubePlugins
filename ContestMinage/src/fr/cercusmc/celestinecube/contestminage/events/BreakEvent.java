@@ -16,6 +16,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.Arrays;
+import java.util.TreeMap;
 
 public class BreakEvent implements Listener {
     @EventHandler
@@ -99,8 +100,12 @@ public class BreakEvent implements Listener {
         }
     }
 
-    public static void removePickaxe() {
+    public static void removePickaxe(TreeMap<Integer, Player> map) {
         if(Main.getInstance().getConfig().getBoolean("pioche_event.use")) {
+        	 map.entrySet().forEach(entry -> {
+        		 if(Arrays.asList(entry.getValue().getInventory().getContents()).contains(buildPickaxe()))
+                     entry.getValue().getInventory().remove(buildPickaxe());
+        	 });
             for(Player p : Bukkit.getOnlinePlayers()) {
                 if(Arrays.asList(p.getInventory().getContents()).contains(buildPickaxe()))
                     p.getInventory().remove(buildPickaxe());

@@ -40,10 +40,16 @@ public class TimerTask extends BukkitRunnable {
                     index++;
                 }
             });
+            while(index <= 5) {
+            	Main.getInstance().getConfig().set("history."+index+".name", "");
+                Main.getInstance().getConfig().set("history."+index+".count", 0);
+                Main.getInstance().saveConfig();
+                index++;
+            }
             index = 1;
 
             Main.getPlayers().clear();
-            BreakEvent.removePickaxe();
+            BreakEvent.removePickaxe(map);
 
         }
         Main.setTimer(Main.getTimer()-1);
