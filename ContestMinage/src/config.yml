@@ -1,0 +1,130 @@
+messages:
+  event_finished: "§eL'event minage est terminé"
+  display_result_header: "§e===== Affichage des résultats du concours ====="
+  event_begin: "§eL'event minage vient de commencer. L'event dure %time% secondes."
+time_contest: 60
+worlds_contest:
+  - "world"
+points:
+  COAL_ORE: 1
+  DEEPSLATE_COAL_ORE: 1
+  COPPER_ORE: 1
+  DEEPSLATE_COPPER_ORE: 1
+  IRON_ORE: 2
+  DEEPSLATE_IRON_ORE: 2
+  GOLD_ORE: 3
+  DEEPSLATE_GOLD_ORE: 3
+  LAPIS_ORE: 4
+  DEEPSLATE_LAPIS_ORE: 4
+  REDSTONE_ORE: 4
+  DEEPSLATE_REDSTONE_ORE: 4
+  DIAMOND_ORE: 8
+  DEEPSLATE_DIAMOND_ORE: 8
+  EMERALD_ORE: 12
+  DEEPSLATE_EMERALD_ORE: 12
+pioche_event:
+  use: true
+  name: "§ePioche event"
+  lore:
+    - ""
+    - "§fCette pioche permet de miner à l'event"
+    - ""
+  material: "DIAMOND_PICKAXE"
+  unbreakable: true
+  enchantments:
+    - "EFFICIENCY 5"
+recompense:
+  1:
+    items:
+      1:
+        name: ""
+        lore:
+          - ""
+        material: "DIAMOND"
+        count: 12
+        item_enchantable: false
+        enchantments: []
+      2:
+        name: ""
+        lore:
+          - ""
+        material: "BEACON"
+        count: 1
+        item_enchantable: false
+        enchantments: []
+      3:
+        name: "Pioche spéciale"
+        lore:
+          - ""
+        material: "DIAMOND_PICKAXE"
+        count: 1
+        item_enchantable: true
+        enchantments:
+          - "EFFICIENCY 5"
+          - "UNBREAKING 3"
+    money: 10000
+    level_xp: 20
+  2:
+    items:
+      1:
+        name: ""
+        lore:
+          - ""
+        material: "DIAMOND"
+        count: 7
+        item_enchantable: false
+        enchantments: []
+    money: 5000
+    level_xp: 10
+  3:
+    items:
+      1:
+        name: ""
+        lore:
+          - ""
+        material: "DIAMOND"
+        count: 4
+        item_enchantable: false
+        enchantments: []
+    money: 2000
+    level_xp: 5
+  4:
+    items:
+      1:
+        name: ""
+        lore:
+          - ""
+        material: "DIAMOND"
+        count: 2
+        item_enchantable: false
+        enchantments: []
+    money: 2000
+    level_xp: 5
+  5:
+    items:
+      1:
+        name: ""
+        lore:
+          - ""
+        material: "DIAMOND"
+        count: 1
+        item_enchantable: false
+        enchantments: []
+    money: 2000
+    level_xp: 5
+history:
+   1:
+      name: ""
+      count: 0
+   2:
+      name: ""
+      count: 0
+   3:
+      name: ""
+      count: 0
+   4:
+      name: ""
+      count: 0
+   5:
+      name: ""
+      count: 0

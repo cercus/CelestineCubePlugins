@@ -1,0 +1,8 @@
+name: ContestMinage
+version: ${project.version}
+main: fr.cercusmc.celestinecube.contestminage.Main
+api-version: 1.18
+depend: [Vault, Essentials, PlaceholderAPI]
+authors: [CercusMC]
+commands:
+  contestminage:
