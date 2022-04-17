@@ -58,7 +58,7 @@ public final class Main extends JavaPlugin {
         getCommand("contestminage").setTabCompleter(new ContestMinage());
 
         if(!setupEconomy()) {
-            Logger.getLogger("ContestMinage").severe("Vault n'est pas installé sur le serveur !");
+            Logger.getLogger("ContestMinage").severe("Vault n'est pas installÃ© sur le serveur !");
             getServer().getPluginManager().disablePlugin(Main.getInstance());
             return;
         }
