@@ -179,40 +179,4 @@ public class Villager {
 	public String getTitleMenu() {
 		return titleMenu;
 	}
-	
-	
-	
-	
-	/*
-	 * private MerchantRecipe getDiamond() {
-	    ItemStack result = new ItemStack(Material.DIAMOND);
-	    ItemMeta meta = result.getItemMeta();
-	    meta.setDisplayName(Utils.getColString("&aFancy Diamond"));
-	    result.setItemMeta(meta);
-	    MerchantRecipe recipe = new MerchantRecipe(result, 10);
-	    recipe.addIngredient(new ItemStack(Material.STICK, 64));
-	    recipe.addIngredient(new ItemStack(Material.LEATHER, 32));
-	    return recipe;
-	   }
-	   
-	   
-	   
-	   private void openMerchant(Player player) {
-	    // create the actual merchant
-	    Merchant merchant = Bukkit.createMerchant(Utils.getColString("&3Test Merchant"));
-	    // Create a list of recipes for this merchant
-	    List<MerchantRecipe> recipes = new ArrayList<>();
-	    // Add our diamond recipe to this list
-	    recipes.add(getDiamond());
-	    // Add this list of recipes to our merchant
-	    merchant.setRecipes(recipes);
-	    // Open this merchant inventory to the player
-	    player.openMerchant(merchant, true);
-	   }
-	 */
-	
-	
-	
-	
-
 }

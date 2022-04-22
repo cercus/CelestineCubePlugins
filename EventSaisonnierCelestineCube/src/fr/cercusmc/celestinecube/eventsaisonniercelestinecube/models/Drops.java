@@ -26,15 +26,15 @@ public class Drops {
 	private Items buildItem() {
 		ConfigurationSection section = Main.getInstance().getConfig().getConfigurationSection("drops.item");
 		List<Enchantment> ench = new ArrayList<>();
-		for(String e : section.getStringList("drops.item.enchantments"))
+		for(String e : section.getStringList("enchantments"))
 			ench.add(new Enchantment(e.split(" ")[0], Integer.parseInt(e.split(" ")[1])));
 		
-		Items it = new Items(Material.valueOf(section.getString("drops.material")), section.getInt("drops.count"),
-				section.getString("drops.name"), 
-				section.getStringList("drops.lore"), 
-				section.getBoolean("drops.unbreakable"), 
+		Items it = new Items(Material.valueOf(section.getString("material")), section.getInt("count"),
+				section.getString("name"), 
+				section.getStringList("lore"), 
+				section.getBoolean("unbreakable"), 
 				ench, 
-				section.getBoolean("drops.hide_enchantment"));
+				section.getBoolean("hide_enchantment"));
 		
 		return it;
 	}
