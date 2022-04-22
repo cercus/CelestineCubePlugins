@@ -1,0 +1,9 @@
+name: EventSaisonnierCelestineCube
+author: CercusMC
+api-version: 1.18
+main: fr.cercusmc.celestinecube.eventsaisonniercelestinecube.Main
+version: 1.0
+commands:
+   eventsaisonnier:
+      aliases:
+         - "eventsaison"

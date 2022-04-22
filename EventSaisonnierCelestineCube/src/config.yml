@@ -1,0 +1,108 @@
+messages:
+   not_a_player: "&cSeul les joueurs peuvent executer cette commande"
+   no_permission: "&cVous n'avez pas la permission d'utiliser cette commande"
+   config_reloaded: "&eLe fichier de configuration a bien été rechargé"
+   world_unknown: "&cLe monde spécifié n'existe pas"
+   coordonnees_invalid: "&cLes coordonnées entrées sont invalides"
+   success_summon_villager: "&eLe villageois a bien spawn"
+event_name: "&eEvent de Pâques"
+villager:
+   name: "&eVillageois de Pâques"
+   profession: "FARMER"
+   invulnerable: true
+   title_menu: "&eEvent de Paques"
+   trades:
+      1:
+         sellItem:
+            material: "TURTLE_EGG"
+            count: 1
+            name: "&eOeuf de Pâques Spécial"
+            lore:
+               - ""
+               - "&f---------------"
+               - "&eOeuf de Pâques spécial"
+               - "&eA échanger au /pw Lapins avec le PNJ"
+               - "&f---------------"
+               - ""
+            unbreakable: false
+            hide_enchantment: true
+            enchantments:
+               - "EFFICIENCY 1"
+         buyItem1:
+            material: "TURTLE_EGG"
+            count: 64
+            name: "&eOeuf de Pâques normal"
+            lore:
+               - ""
+               - "&f---------------"
+               - "&eOeuf de Pâques normal"
+               - "&eA échanger au /pw Lapins avec le PNJ"
+               - "&f---------------"
+               - ""
+            unbreakable: false
+            hide_enchantment: true
+            enchantments:
+               - "EFFICIENCY 1"
+         buyItem2:
+            material: "DIAMOND"
+            count: 2
+            name: ""
+            lore: []
+            unbreakable: false
+            enchantments: []
+      2:
+         sellItem:
+            material: "CHAINMAIL_HELMET"
+            count: 1
+            name: "&cCasque de Pâques 2022"
+            lore:
+               - ""
+               - "&f---------------"
+               - "&eUn casque issu de l'event Pâques 2022"
+               - "&f---------------"
+               - ""
+            unbreakable: true
+            hide_enchantment: false
+            enchantments:
+               - "PROTECTION 4"
+               - "FIRE_PROTECTION 4"
+         buyItem1:
+            material: "TURTLE_EGG"
+            count: 1
+            name: "&eOeuf de Pâques Spécial"
+            lore:
+               - ""
+               - "&f---------------"
+               - "&eOeuf de Pâques spécial"
+               - "&eA échanger au /pw Lapins avec le PNJ"
+               - "&f---------------"
+               - ""
+            unbreakable: false
+            hide_enchantment: true
+            enchantments:
+               - "EFFICIENCY 1"
+         buyItem2:
+ 
+drops:
+   all_mobs: true
+   mobs_available:
+      - "ZOMBIE"
+      - "SPIDER"
+   chance: 0.2
+   item:
+      material: "TURTLE_EGG"
+      count: 1
+      name: "&eOeuf de Pâques Normal"
+      lore:
+         - ""
+         - "&f---------------"
+         - "&eOeuf de Pâques normal"
+         - "&eA échanger au /pw Lapins avec le PNJ"
+         - "&f---------------"
+         - ""
+      unbreakable: false
+      hide_enchantment: true
+      enchantments:
+         - "EFFICIENCY 1"
+              
+         
